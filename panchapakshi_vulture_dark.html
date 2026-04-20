@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>禿鷹 Vulture · 完整日夜時序表（暗色版）</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 720px; margin: 0 auto; padding: 1.5rem; background: #0e0e0e; color: #d4d4d4; }
+  h1 { font-size: 20px; font-weight: 500; margin-bottom: 4px; color: #ececec; }
+  .sub { font-size: 13px; color: #777; margin-bottom: 1.5rem; }
+  .tabs { display: flex; gap: 8px; margin-bottom: 1rem; }
+  .tab { font-size: 13px; padding: 6px 14px; border-radius: 8px; border: 1px solid #333; cursor: pointer; background: transparent; color: #888; }
+  .tab.active { background: #1e1e1e; color: #ececec; border-color: #555; font-weight: 500; }
+  .tc { display: none; }
+  .tc.active { display: block; }
+  .sec-label { font-size: 11px; font-weight: 600; color: #555; letter-spacing: 0.07em; text-transform: uppercase; margin: 1.2rem 0 6px; }
+  table { width: 100%; border-collapse: collapse; font-size: 12px; margin-bottom: 1.2rem; }
+  th { font-size: 10px; color: #555; padding: 6px 6px; text-align: center; border-bottom: 1px solid #222; background: #141414; font-weight: 500; line-height: 1.4; }
+  th.dl { text-align: left; }
+  td { padding: 6px 6px; border-bottom: 1px solid #1a1a1a; text-align: center; vertical-align: middle; }
+  td.dl { text-align: left; font-weight: 500; color: #ccc; font-size: 12px; white-space: nowrap; }
+  tr:hover td { background: #161616; }
+  .r { background: #0d3326; color: #4ecf9a; font-weight: 600; font-size: 11px; padding: 2px 6px; border-radius: 6px; display: inline-block; }
+  .e { background: #1a2e0d; color: #8bc34a; font-size: 11px; padding: 2px 6px; border-radius: 6px; display: inline-block; }
+  .w { background: #1e1e1e; color: #888; font-size: 11px; padding: 2px 6px; border-radius: 6px; display: inline-block; }
+  .s { background: #181818; color: #555; font-size: 11px; padding: 2px 6px; border-radius: 6px; display: inline-block; }
+  .d { background: #2e0d0d; color: #e07070; font-size: 11px; padding: 2px 6px; border-radius: 6px; display: inline-block; }
+  .legend { display: flex; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
+  .li { display: flex; align-items: center; gap: 5px; font-size: 11px; color: #666; }
+  .ld { width: 8px; height: 8px; border-radius: 50%; }
+  .note { font-size: 11px; color: #555; margin-top: 1rem; line-height: 1.6; border-left: 2px solid #2a2a2a; padding-left: 10px; font-style: italic; }
+</style>
+</head>
+<body>
+<h1>禿鷹 Vulture · 完整日夜時序表</h1>
+<div class="sub">出生鳥：Uttara Bhadrapada × Krishna Paksha → 禿鷹（Vulture）<br>日間基準：日出06:00 · 日落18:00 · 每Yama = 144分鐘</div>
+
+<div class="tabs">
+  <button class="tab active" onclick="show('s',this)">盈月 Shukla Paksha（農曆初一—十五）</button>
+  <button class="tab" onclick="show('k',this)">虧月 Krishna Paksha（農曆十六—月底）</button>
+</div>
+
+<!-- SHUKLA -->
+<div class="tc active" id="s">
+  <div class="legend">
+    <div class="li"><div class="ld" style="background:#4ecf9a"></div>主導 Rule（最吉）</div>
+    <div class="li"><div class="ld" style="background:#8bc34a"></div>進食 Eat</div>
+    <div class="li"><div class="ld" style="background:#666"></div>行走 Walk</div>
+    <div class="li"><div class="ld" style="background:#444"></div>睡眠 Sleep</div>
+    <div class="li"><div class="ld" style="background:#e07070"></div>衰亡 Die（最凶）</div>
+  </div>
+
+  <div class="sec-label">日間 · 日出至日落（Shukla Paksha）</div>
+  <table>
+    <thead>
+      <tr>
+        <th class="dl">星期</th>
+        <th>Yama 1<br>06:00–08:24</th>
+        <th>Yama 2<br>08:24–10:48</th>
+        <th>Yama 3<br>10:48–13:12</th>
+        <th>Yama 4<br>13:12–15:36</th>
+        <th>Yama 5<br>15:36–18:00</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="dl">日 Sun</td><td><span class="r">主導</span></td><td><span class="e">進食</span></td><td><span class="w">行走</span></td><td><span class="s">睡眠</span></td><td><span class="d">衰亡</span></td></tr>
+      <tr><td class="dl">月 Mon</td><td><span class="e">進食</span></td><td><span class="w">行走</span></td><td><span class="s">睡眠</span></td><td><span class="d">衰亡</span></td><td><span class="r">主導</span></td></tr>
+      <tr><td class="dl">火 Tue</td><td><span class="w">行走</span></td><td><span class="s">睡眠</span></td><td><span class="d">衰亡</span></td><td><span class="r">主導</span></td><td><span class="e">進食</span></td></tr>
+      <tr><td class="dl">水 Wed</td><td><span class="s">睡眠</span></td><td><span class="d">衰亡</span></td><td><span class="r">主導</span></td><td><span class="e">進食</span></td><td><span class="w">行走</span></td></tr>
+      <tr><td class="dl">木 Thu</td><td><span class="d">衰亡</span></td><td><span class="r">主導</span></td><td><span class="e">進食</span></td><td><span class="w">行走</span></td><td><span class="s">睡眠</span></td></tr>
+      <tr><td class="dl">金 Fri</td><td><span class="s">睡眠</span></td><td><span class="d">衰亡</span></td><td><span class="r">主導</span></td><td><span class="e">進食</span></td><td><span class="w">行走</span></td></tr>
+      <tr><td class="dl">土 Sat</td><td><span class="w">行走</span></td><td><span class="s">睡眠</span></td><td><span class="d">衰亡</span></td><td><span class="r">主導</span></td><td><span class="e">進食</span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="sec-label">夜間 · 日落至翌日日出（Shukla Paksha）</div>
+  <table>
+    <thead>
+      <tr>
+        <th class="dl">星期（夜）</th>
+        <th>Yama 6<br>18:00–20:24</th>
+        <th>Yama 7<br>20:24–22:48</th>
+        <th>Yama 8<br>22:48–01:12</th>
+        <th>Yama 9<br>01:12–03:36</th>
+        <th>Yama 10<br>03:36–06:00</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="dl">日夜 Sun</td><td><span class="e">進食</span></td><td><span class="w">行走</span></td><td><span class="s">睡眠</span></td><td><span class="d">衰亡</span></td><td><span class="r">主導</span></td></tr>
+      <tr><td class="dl">月夜 Mon</td><td><span class="w">行走</span></td><td><span class="s">睡眠</span></td><td><span class="d">衰亡</span></td><td><span class="r">主導</span></td><td><span class="e">進食</span></td></tr>
+      <tr><td class="dl">火夜 Tue</td><td><span class="r">主導</span></td><td><span class="e">進食</span></td><td><span class="w">行走</span></td><td><span class="s">睡眠</span></td><td><span class="d">衰亡</span></td></tr>
+      <tr><td class="dl">水夜 Wed</td><td><span class="d">衰亡</span></td><td><span class="r">主導</span></td><td><span class="e">進食</span></td><td><span class="w">行走</span></td><td><span class="s">睡眠</span></td></tr>
+      <tr><td class="dl">木夜 Thu</td><td><span class="s">睡眠</span></td><td><span class="d">衰亡</span></td><td><span class="r">主導</span></td><td><span class="e">進食</span></td><td><span class="w">行走</span></td></tr>
+      <tr><td class="dl">金夜 Fri</td><td><span class="d">衰亡</span></td><td><span class="r">主導</span></td><td><span class="e">進食</span></td><td><span class="w">行走</span></td><td><span class="s">睡眠</span></td></tr>
+      <tr><td class="dl">土夜 Sat</td><td><span class="e">進食</span></td><td><span class="w">行走</span></td><td><span class="s">睡眠</span></td><td><span class="d">衰亡</span></td><td><span class="r">主導</span></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- KRISHNA -->
+<div class="tc" id="k">
+  <div class="legend">
+    <div class="li"><div class="ld" style="background:#4ecf9a"></div>主導 Rule（最吉）</div>
+    <div class="li"><div class="ld" style="background:#8bc34a"></div>進食 Eat</div>
+    <div class="li"><div class="ld" style="background:#666"></div>行走 Walk</div>
+    <div class="li"><div class="ld" style="background:#444"></div>睡眠 Sleep</div>
+    <div class="li"><div class="ld" style="background:#e07070"></div>衰亡 Die（最凶）</div>
+  </div>
+
+  <div class="sec-label">日間 · 日出至日落（Krishna Paksha）</div>
+  <table>
+    <thead>
+      <tr>
+        <th class="dl">星期</th>
+        <th>Yama 1<br>06:00–08:24</th>
+        <th>Yama 2<br>08:24–10:48</th>
+        <th>Yama 3<br>10:48–13:12</th>
+        <th>Yama 4<br>13:12–15:36</th>
+        <th>Yama 5<br>15:36–18:00</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="dl">日 Sun</td><td><span class="e">進食</span></td><td><span class="w">行走</span></td><td><span class="s">睡眠</span></td><td><span class="d">衰亡</span></td><td><span class="r">主導</span></td></tr>
+      <tr><td class="dl">月 Mon</td><td><span class="r">主導</span></td><td><span class="e">進食</span></td><td><span class="w">行走</span></td><td><span class="s">睡眠</span></td><td><span class="d">衰亡</span></td></tr>
+      <tr><td class="dl">火 Tue</td><td><span class="s">睡眠</span></td><td><span class="d">衰亡</span></td><td><span class="r">主導</span></td><td><span class="e">進食</span></td><td><span class="w">行走</span></td></tr>
+      <tr><td class="dl">水 Wed</td><td><span class="r">主導</span></td><td><span class="e">進食</span></td><td><span class="w">行走</span></td><td><span class="s">睡眠</span></td><td><span class="d">衰亡</span></td></tr>
+      <tr><td class="dl">木 Thu</td><td><span class="w">行走</span></td><td><span class="s">睡眠</span></td><td><span class="d">衰亡</span></td><td><span class="r">主導</span></td><td><span class="e">進食</span></td></tr>
+      <tr><td class="dl">金 Fri</td><td><span class="d">衰亡</span></td><td><span class="r">主導</span></td><td><span class="e">進食</span></td><td><span class="w">行走</span></td><td><span class="s">睡眠</span></td></tr>
+      <tr><td class="dl">土 Sat</td><td><span class="d">衰亡</span></td><td><span class="r">主導</span></td><td><span class="e">進食</span></td><td><span class="w">行走</span></td><td><span class="s">睡眠</span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="sec-label">夜間 · 日落至翌日日出（Krishna Paksha）</div>
+  <table>
+    <thead>
+      <tr>
+        <th class="dl">星期（夜）</th>
+        <th>Yama 6<br>18:00–20:24</th>
+        <th>Yama 7<br>20:24–22:48</th>
+        <th>Yama 8<br>22:48–01:12</th>
+        <th>Yama 9<br>01:12–03:36</th>
+        <th>Yama 10<br>03:36–06:00</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="dl">日夜 Sun</td><td><span class="w">行走</span></td><td><span class="s">睡眠</span></td><td><span class="d">衰亡</span></td><td><span class="r">主導</span></td><td><span class="e">進食</span></td></tr>
+      <tr><td class="dl">月夜 Mon</td><td><span class="e">進食</span></td><td><span class="w">行走</span></td><td><span class="s">睡眠</span></td><td><span class="d">衰亡</span></td><td><span class="r">主導</span></td></tr>
+      <tr><td class="dl">火夜 Tue</td><td><span class="d">衰亡</span></td><td><span class="r">主導</span></td><td><span class="e">進食</span></td><td><span class="w">行走</span></td><td><span class="s">睡眠</span></td></tr>
+      <tr><td class="dl">水夜 Wed</td><td><span class="r">主導</span></td><td><span class="e">進食</span></td><td><span class="w">行走</span></td><td><span class="s">睡眠</span></td><td><span class="d">衰亡</span></td></tr>
+      <tr><td class="dl">木夜 Thu</td><td><span class="r">主導</span></td><td><span class="e">進食</span></td><td><span class="w">行走</span></td><td><span class="s">睡眠</span></td><td><span class="d">衰亡</span></td></tr>
+      <tr><td class="dl">金夜 Fri</td><td><span class="s">睡眠</span></td><td><span class="d">衰亡</span></td><td><span class="r">主導</span></td><td><span class="e">進食</span></td><td><span class="w">行走</span></td></tr>
+      <tr><td class="dl">土夜 Sat</td><td><span class="s">睡眠</span></td><td><span class="d">衰亡</span></td><td><span class="r">主導</span></td><td><span class="e">進食</span></td><td><span class="w">行走</span></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="note">
+  時間以高雄日出06:00、日落18:00為基準，每Yama = 144分鐘。夏季日出約05:40、冬季約06:20，可按比例微調。<br>
+  月相判斷：農曆初一至十五 = 盈月（Shukla）；十六至月底 = 虧月（Krishna）。<br>
+  夜間表的「星期」以當晚開始的星期計算（例：週日夜間 = 週日18:00至週一06:00）。
+</div>
+
+<script>
+function show(id, btn) {
+  document.querySelectorAll('.tc').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
+</body>
+</html>
